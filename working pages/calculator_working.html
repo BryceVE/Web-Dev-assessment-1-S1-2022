@@ -3,12 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="/mainSite.css">
 
     <script>
         function twoToThePowerOf(form) {
-            alert("Complete Javascript, and disable this alert.");
+
+            //stores users' input in aa variable
+            let input = form.powerValue.value;
+
+            //calculates the input to the power of 2
+            let answer = Math.pow(input, 2)
+
+            //outputs the answer
+            document.getElementById("powerResult").innerHTML = answer;
         }
     </script>
 </head>
