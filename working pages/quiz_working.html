@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="/mainSite.css">
     <script>
         function checkAnswers(form) {
-            alert("Complete Javascript, and disable this alert.");
+            //stores users' inputs into an array
+            const answers = []
+            answers[0] = form.inputOne.value
+            answers[1] = form.inputTwo.value
+            answers[2] = form.inputThree.value
+
+            //checks if first answer is correct
+            if (answers[0] == 9){
+                document.getElementById("outputOne").style.color = "green";
+                document.getElementById("outputOne").innerHTML = "Correct!";
+            } else { //if answer is incorrect
+                document.getElementById("outputOne").style.color = "red";
+                document.getElementById("outputOne").innerHTML = "Incorrect";
+            }
+
+            //checks if second answer is correct
+            if (answers[1] == 27){
+                document.getElementById("outputTwo").style.color = "green";
+                document.getElementById("outputTwo").innerHTML = "Correct!";
+            } else { //if answer is incorrect
+                document.getElementById("outputTwo").style.color = "red";
+                document.getElementById("outputTwo").innerHTML = "Incorrect";
+            }
+
+            //checks if third answer is correct
+            if (answers[2] == 9){
+                document.getElementById("outputThree").style.color = "green";
+                document.getElementById("outputThree").innerHTML = "Correct!";
+            } else { //if answer is incorrect
+                document.getElementById("outputThree").style.color = "red";
+                document.getElementById("outputThree").innerHTML = "Incorrect";
+            }
         }
     </script>
 </head>
@@ -37,15 +68,15 @@
         <p>Questions</p>
         <form onsubmit="return false">
             <p>
-                <label for="inputOne">Question 1</label>
+                <label for="inputOne">What is 3x3?</label>
                 <input type='text' size=25 id="inputOne" name='inputOne'>
             </p>
             <p>
-                <label for="inputTwo">Question 2</label>
+                <label for="inputTwo">What is 3 to the power if 3?</label>
                 <input type='text' size=25 id="inputTwo" name='inputTwo'>
             </p>
             <p>
-                <label for="inputThree">Question 3</label>
+                <label for="inputThree">What is 3 squared?</label>
                 <input type='text' size=25 id="inputThree" name='inputThree'>
             </p>
             <button onclick="checkAnswers(this.form)">Check Answers</button>
