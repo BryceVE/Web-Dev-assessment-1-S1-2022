@@ -16,12 +16,16 @@
                 randomValues[loopCounter] = randomNumber;
             }
 
-            let numberDetails = {
-                sum: randomValues.sum(),
+            const numberDetails = {
+                sum: 0,
                 product: 1
             }
 
-            document.getElementById("randomNumbersOutput").innerHTML = numberDetails["sum"];
+            for (let loopCounter = 0; loopCounter<generateAmount; loopCounter++) {
+                sum = sum + randomValues[loopCounter];
+            }
+
+            document.getElementById("randomNumbersOutput").innerHTML = sum;
 
         }
     </script>
