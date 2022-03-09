@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="/mainSite.css">
     <script>
         function randomNumberGenerator(nums) {
-            alert("Complete Javascript, and disable this alert.");
+            let generateAmount = prompt("How many random numbers will be generated?");
+
+            let randomValues = [];
+
+            for (let loopCounter = 0; loopCounter<generateAmount; loopCounter++) {
+                let randomNumber = Math.random() * 100;
+                randomValues[loopCounter] = randomNumber;
+            }
+
+            let numberDetails = {
+                sum: randomValues.sum(),
+                product: 1
+            }
+
+            document.getElementById("randomNumbersOutput").innerHTML = numberDetails["sum"];
+
         }
     </script>
     <style>

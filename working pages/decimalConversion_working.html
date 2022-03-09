@@ -6,8 +6,36 @@
     <title>Decimal Conversion</title>
     <link rel="stylesheet" href="/mainSite.css">
     <script>
+
+
+
         function startConversionProcess() {
-            alert("Complete Javascript, and disable this alert.");
+            //input for user to input decimal number
+            let decimal = parseInt(prompt("Enter a number!"));
+
+            //calls convert to binary function
+            convertToBinary(decimalNumberToConvert = decimal);
+
+            //calls convert to hexadecimal function
+            convertToHexadecimal(decimalNumberToConvert = decimal)
+
+            //display calculated binary and hexadecimal in output
+            document.getElementById("outputBinary").innerHTML = "Binary: " + binary;
+            document.getElementById("outputHexadecimal").innerHTML = "Hexadecimal: " + hexadecimal;
+        }
+
+        function convertToBinary(decimalNumberToConvert) {
+            //converts decimal to binary
+            binary = decimalNumberToConvert.toString(2);
+            //returns binary value
+            return binary;
+        }
+
+        function convertToHexadecimal(decimalNumberToConvert) {
+            //converts decimal to hexadecimal
+            hexadecimal = decimalNumberToConvert.toString(16);
+            //returns hexadecimal value
+            return hexadecimal;
         }
     </script>
 </head>
