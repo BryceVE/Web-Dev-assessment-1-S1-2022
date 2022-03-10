@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="/mainSite.css">
     <script>
         function authentication(form) {
-            alert("Complete Javascript, and disable this alert.");
+            //sets correct username and password
+            let userName = "admin";
+            let password = "admin";
+
+            //gets the username and password user has inputted
+            let userNameInput = form.uname.value;
+            let passwordinput = form.pwd.value;
+
+            //checks is both username and password are correct
+            if (userNameInput == userName && passwordinput == password) {
+                document.getElementById("outputStatus").style.color = "green";
+                document.getElementById("outputStatus").innerHTML = "Success!";
+            } else {
+                document.getElementById("outputStatus").style.color = "red";
+                document.getElementById("outputStatus").innerHTML = "Failed";
+            }
         }
     </script>
 </head>
