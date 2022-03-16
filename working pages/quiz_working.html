@@ -15,29 +15,23 @@
 
             //checks if first answer is correct
             if (answers[0] == 9){
-                document.getElementById("outputOne").style.color = "green";
-                document.getElementById("outputOne").innerHTML = "Correct!";
+                document.getElementById("outputOne").innerHTML = "<p style='color: green'>Correct!</p>";
             } else { //if answer is incorrect
-                document.getElementById("outputOne").style.color = "red";
-                document.getElementById("outputOne").innerHTML = "Incorrect";
+                document.getElementById("outputOne").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
 
             //checks if second answer is correct
             if (answers[1] == 27){
-                document.getElementById("outputTwo").style.color = "green";
-                document.getElementById("outputTwo").innerHTML = "Correct!";
+                document.getElementById("outputTwo").innerHTML = "<p style='color: green'>Correct!</p>";
             } else { //if answer is incorrect
-                document.getElementById("outputTwo").style.color = "red";
-                document.getElementById("outputTwo").innerHTML = "Incorrect";
+                document.getElementById("outputTwo").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
 
             //checks if third answer is correct
             if (answers[2] == 9){
-                document.getElementById("outputThree").style.color = "green";
-                document.getElementById("outputThree").innerHTML = "Correct!";
+                document.getElementById("outputThree").innerHTML = "<p style='color: green'>Correct!</p>";
             } else { //if answer is incorrect
-                document.getElementById("outputThree").style.color = "red";
-                document.getElementById("outputThree").innerHTML = "Incorrect";
+                document.getElementById("outputThree").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
         }
     </script>
