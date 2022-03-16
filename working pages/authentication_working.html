@@ -17,11 +17,9 @@
 
             //checks is both username and password are correct
             if (userNameInput == userName && passwordinput == password) {
-                document.getElementById("outputStatus").style.color = "green";
-                document.getElementById("outputStatus").innerHTML = "Success!";
+                document.getElementById("outputStatus").innerHTML = "<p style='color: green'>Success!</p>";
             } else {
-                document.getElementById("outputStatus").style.color = "red";
-                document.getElementById("outputStatus").innerHTML = "Failed";
+                document.getElementById("outputStatus").innerHTML = "<p style='color: red'>Failed</p>";
             }
         }
     </script>
