@@ -12,7 +12,23 @@
             answers[1] = form.inputTwo.value
             answers[2] = form.inputThree.value
 
-            //redo
+            if (answers[0] == "One") {
+                document.getElementById("outputOne").innerHTML = "<p style='color: green'>Correct!</p>"
+            } else {
+                document.getElementById("outputOne").innerHTML = "<p style='color: red'>Incorrect</p>"
+            }
+
+            if (answers[1] == "Two") {
+                document.getElementById("outputTwo").innerHTML = "<p style='color: green'>Correct!</p>"
+            } else {
+                document.getElementById("outputTwo").innerHTML = "<p style='color: red'>Incorrect</p>"
+            }
+
+            if (answers[2] == "Three") {
+                document.getElementById("outputThree").innerHTML = "<p style='color: green'>Correct!</p>"
+            } else {
+                document.getElementById("outputThree").innerHTML = "<p style='color: red'>Incorrect</p>"
+            }
         }
     </script>
 </head>

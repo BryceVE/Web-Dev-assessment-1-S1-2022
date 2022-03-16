@@ -13,7 +13,11 @@
             let userNameInput = form.uname.value
             let passwordInput = form.pwd.value
 
-            //redo
+            if (userNameInput == userName && passwordInput == password) {
+                document.getElementById("outputStatus").innerHTML = "<p style='color: green'>Success!</p>"
+            } else {
+                document.getElementById("outputStatus").innerHTML = "<p style='color: red'>Failed</p>"
+            }
         }
     </script>
 </head>
