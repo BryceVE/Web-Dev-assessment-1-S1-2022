@@ -13,18 +13,16 @@
 
             convertToHexadecimal(decimalNumberToConvert = decimal);
 
-            document.getElementById("outputBinary").innerHTML = "Binary: " + binary;
-            document.getElementById("outputHexadecimal").innerHTML = "Hexadecimal: " + hexadecimal;
+            document.getElementById("outputBinary").innerHTML = binary;
+            document.getElementById("outputHexadecimal").innerHTML = hexadecimal;
         }
 
-        function convertToBinary(decimalNumberToConvert) {
+        function convertToBinary() {
             binary = decimalNumberToConvert.toString(2);
-            return binary;
         }
 
-        function convertToHexadecimal(decimalNumberToConvert) {
+        function convertToHexadecimal() {
             hexadecimal = decimalNumberToConvert.toString(16);
-            return hexadecimal;
         }
 
     </script>
