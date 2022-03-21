@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="mainSite.css">
     <script>
         function convertBits(form) {
+            //stores users' inputs into an array
             const input = []
             input[0] = form.input128.value
             input[1] = form.input64.value
@@ -17,10 +18,13 @@
             input[6] = form.input2.value
             input[7] = form.input1.value
 
+            //joins the inputs in the array to binary number
             let binary = +input.join("");
 
+            //converts binary number to decimal
             let decimal = parseInt(binary, 2);
 
+            //displays decimal number on page
             document.getElementById("output").innerHTML = decimal;
         }
     </script>

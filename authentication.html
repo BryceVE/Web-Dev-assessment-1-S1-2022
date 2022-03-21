@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="mainSite.css">
     <script>
         function authentication(form) {
+            //sets correct username and password
             let userName = "admin";
             let password = "admin";
 
-            let userNameInput = form.uname.value
-            let passwordInput = form.pwd.value
+            //gets the username and password user has inputted
+            let userNameInput = form.uname.value;
+            let passwordinput = form.pwd.value;
 
-            if (userNameInput == userName && passwordInput == password) {
-                document.getElementById("outputStatus").innerHTML = "<p style='color: green'>Success!</p>"
+            //checks is both username and password are correct
+            if (userNameInput == userName && passwordinput == password) {
+                document.getElementById("outputStatus").innerHTML = "<p style='color: green'>Success!</p>";
             } else {
-                document.getElementById("outputStatus").innerHTML = "<p style='color: red'>Failed</p>"
+                document.getElementById("outputStatus").innerHTML = "<p style='color: red'>Failed</p>";
             }
         }
     </script>

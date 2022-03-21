@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="mainSite.css">
     <script>
         function checkAnswers(form) {
+            //stores users' inputs into an array
             const answers = []
             answers[0] = form.inputOne.value
             answers[1] = form.inputTwo.value
             answers[2] = form.inputThree.value
 
-            if (answers[0] == "One") {
-                document.getElementById("outputOne").innerHTML = "<p style='color: green'>Correct!</p>"
-            } else {
-                document.getElementById("outputOne").innerHTML = "<p style='color: red'>Incorrect</p>"
+            //checks if first answer is correct
+            if (answers[0] == 9){
+                document.getElementById("outputOne").innerHTML = "<p style='color: green'>Correct!</p>";
+            } else { //if answer is incorrect
+                document.getElementById("outputOne").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
 
-            if (answers[1] == "Two") {
-                document.getElementById("outputTwo").innerHTML = "<p style='color: green'>Correct!</p>"
-            } else {
-                document.getElementById("outputTwo").innerHTML = "<p style='color: red'>Incorrect</p>"
+            //checks if second answer is correct
+            if (answers[1] == 27){
+                document.getElementById("outputTwo").innerHTML = "<p style='color: green'>Correct!</p>";
+            } else { //if answer is incorrect
+                document.getElementById("outputTwo").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
 
-            if (answers[2] == "Three") {
-                document.getElementById("outputThree").innerHTML = "<p style='color: green'>Correct!</p>"
-            } else {
-                document.getElementById("outputThree").innerHTML = "<p style='color: red'>Incorrect</p>"
+            //checks if third answer is correct
+            if (answers[2] == 9){
+                document.getElementById("outputThree").innerHTML = "<p style='color: green'>Correct!</p>";
+            } else { //if answer is incorrect
+                document.getElementById("outputThree").innerHTML = "<p style='color: red'>Incorrect</p>";
             }
         }
     </script>
